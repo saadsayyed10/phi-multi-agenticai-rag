@@ -1,0 +1,31 @@
+[project]
+name = "multi-agentic-ai-rag-with-vector-database"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saad Sayyed", email = "saadsyed950@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "duckduckgo-search>=8.1.1",
+    "fonttools>=4.68.0",
+    "groq>=1.7.0",
+    "ollama>=0.6.3",
+    "openai>=3.59.0",
+    "pgvector>=0.5.1",
+    "phidata>=2.7.10",
+    "psycopg[binary]>=3.3.9",
+    "pydantic>=2.14.4",
+    "pypdf>=7.1.1",
+    "sqlalchemy>=2.1.9",
+    "typer>=0.29.2",
+]
+
+[project.scripts]
+multi-agentic-ai-rag-with-vector-database = "multi_agentic_ai_rag_with_vector_database:main"
+
+[build-system]
+requires = ["uv_build>=0.13.10,<0.14.0"]
+build-backend = "uv_build"
